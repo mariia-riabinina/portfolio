@@ -1,0 +1,266 @@
+body {
+	font-size: 16px;
+	line-height: 25px;
+}
+
+header {
+	padding: 14px 0 0;
+	text-align: center;
+}
+
+h1 {
+	width: 100%;
+}
+
+h2, h3 {
+	font-size: 21px;
+	line-height: 23px;
+}
+
+nav {
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;;
+}
+
+.nav > li {
+	float: none;
+	display: inline-block;
+	margin-right: 0;
+}
+
+.nav .nav-li-drop {
+	margin: 0;
+}
+
+.nav li a {
+	font-size: 15px;
+	line-height: 17px;
+}
+
+.articles-holder {
+	padding: 30px 2% 0;
+}
+
+.articles article {
+	width: 50%;
+	padding: 0 4% 0px 0;
+	font-size: 17px;
+	line-height: 25px;
+	margin: 0 0 30px;
+    overflow: hidden;
+}
+
+.articles article:last-child {
+    width: 50%;
+    padding: 0;
+}
+
+.articles-holder .articles article h2 {
+    padding: 8px 0 26px 17.2%;
+    background-size: 12.6%;
+}
+
+.jcarousel-wrapper h2 {
+	padding: 26px 0 30px 8.2%;
+	background-size: 4%;
+	background-position: 2% 50%;
+}
+.testimonials h2 {
+	padding: 26px 0 30px 18%;
+	background-size: 14%;
+	background-position: 2% 50%;
+}
+.clients h2 {
+	padding: 30px 0 35px 26%;
+	background-size: 16%;
+	background-position: 7% 50%;
+}
+.read-more {
+	float: right;
+	background-position: 1px 8px;
+	padding: 0px 16px;
+	background-size: 6%;
+}
+
+.read-more:hover {
+	background-position: 100% 8px;
+}
+
+.testimonials-clients {
+    margin: 0 auto 20px;
+}
+
+.testimonials {
+    float: left;
+    width: 50%;
+    padding: 2px 2% 0 0;
+}
+.clients {
+    padding: 0 2%;
+}
+.clients table a:hover img {
+	transform: scale(1.2, 1.2);
+}
+
+.clients table tr:last-child td a:hover img {
+	transform: scale(1.1, 1.1) translateY(5px);
+}
+
+.clients table tr:last-child td .fujifilm:hover img {
+	transform: scale(1.1, 1.2);
+}
+
+.download {
+	padding: 20px 2% 20px 2.1%;
+	margin: 0 auto;
+}
+
+.download p {
+	font-size: 17px;
+	line-height: 25px;
+	padding-right: 2%;
+}
+@media screen and (max-width: 710px){
+.download p {
+	width: 60%;
+}}
+@media screen and (max-width: 690px){
+.download p {
+	width: 58%;
+}}
+
+.download .download-psd, input[type="submit"] {
+	padding: 20px 2.1% 18px 8%;
+	margin: 20px 1% 0 0;
+}
+
+.footer-holder {
+    padding: 15px 2% 40px;
+}
+
+.about-us {
+	width: 100%;
+	padding: 1px 1% 20px 0;
+	text-align: center;
+}
+
+.about-us p {
+    line-height: 25px;
+}
+
+.footer-lists {
+	width: 23%;
+	padding: 0 2% 0 0;
+}
+
+.contact-us {
+	width: 25%;
+	padding: 0 1%;
+}
+
+.contact-us section > * {
+	line-height: 20px;
+}
+
+.connect-with-us {
+	width: 27%;
+	text-align: center;
+}
+
+.connect-with-us h3 {
+    padding: 0 0 0 4%;
+}
+
+.sprites {
+	margin: 0 0 0 7%;
+}
+
+@media screen and (max-width: 815px) {
+.footer-lists {
+    width: 20%;
+    padding: 0 2% 0 0;
+}
+.connect-with-us {
+    width: 34%;
+    text-align: center;
+}
+.sprites {
+	margin: 0 0 0 15%;
+}}
+@media screen and (max-width: 735px) {
+.contact-us {
+    width: 27%;
+}
+.connect-with-us {
+    width: 33%;
+}
+.sprites {
+	margin: 0 0 0 5%;
+}
+.sprites li {
+    float: left;
+    margin: 0 0 9px 10px;
+}
+.sprites li:nth-child(3n) {
+    margin: 0 0 9px 10px;
+}}
+
+.bottom-span {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.portfolio {
+	margin: 0 auto;
+}
+.portfolio h2 {
+	padding: 20px 0 24px 12%;
+	background-size: 7%;
+	background-position: 2% 50%;
+}
+.box {
+	width: 30%;
+	margin: 0 3% 40px 0;
+}
+
+.box:nth-child(3n) {
+	margin-right: 0;
+}
+
+.box:nth-child(4n) {
+	margin: 0 4% 40px 0;
+}
+
+.box:last-child {
+	display: none;
+}
+
+.contacts {
+    margin: 13px auto;
+}
+
+.contacts-content {
+    padding: 25px 0 0;
+}
+.contacts h2 {
+	padding: 8px 0 12px 12%;
+	background-size: 7%;
+	background-position: 2% 50%;
+	margin-bottom: 12px;
+}
+.contacts-form {
+    width: 50%;
+}
+
+.contacts-map-content {
+    width: 45%;
+}
+
+.contacts-map {
+    padding: 10px 5% 12px;
+	margin: 0 0 25px;
+}
+.contacts-map iframe {
+    margin: 10px 0 0;
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1, target-densityDPI=device-dpi"/>
+		<title>BURBANK</title>
+		<link media="all" rel="stylesheet" href="css/all.css" />
+		<link rel="stylesheet" href="css/768.css" media="only screen and (min-width: 481px) and (max-width: 768px)" />
+		<link rel="stylesheet" href="css/480.css" media="only screen and (max-width: 480px)" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.main.js"></script>
+		<script src="js/navclick.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+<!-- - - - - - - - - - - - - - - start HEADER - - - - - - - - - - - - - - -->
+			<header>
+				<div class="navigation">
+					<div class="nav-top">
+						<div class="form-search">
+							<form action="#">
+								<input type="search" placeholder="Search for..." />
+								<input type="submit" value="" />
+							</form>
+						</div>
+						<div class="plans-sprites">
+							<ul class="sprites">
+								<li><a href="#" class="facebook"></a></li>
+								<li><a href="#" class="twitter"></a></li>
+							</ul>
+							<a href="#">Plan a Meeting</a>
+							<a href="#">Plan Your Trip</a>
+						</div>
+					</div>
+					<div class="nav-bottom">
+						<nav>
+							<span class="menu" onclick="switchMenu();">menu</span>
+							<ul id="nav" class="nav">
+								<li>
+									<a href="#">WHAT TO DO</a>
+									<div class="drop">
+										<img src="img/drop-img.jpg" alt="image" />
+										<ul class="drop-list">
+											<li><a href="#">Studio tours &amp; tv tapings</a></li>
+											<li><a href="#">shopping</a></li>
+											<li><a href="#">food &amp; drinks</a></li>
+											<li><a href="#">hotels</a></li>
+											<li><a href="#">arts &amp; culture</a></li>
+											<li><a href="#">parks &amp; recreation</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">Where to Stay</a>
+									<div class="drop">
+										<img src="img/drop-img.jpg" alt="image" />
+										<ul class="drop-list">
+											<li><a href="#">Studio tours &amp; tv tapings</a></li>
+											<li><a href="#">shopping</a></li>
+											<li><a href="#">food &amp; drinks</a></li>
+											<li><a href="#">hotels</a></li>
+											<li><a href="#">arts &amp; culture</a></li>
+											<li><a href="#">parks &amp; recreation</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">Trip Ideas</a>
+									<div class="drop">
+										<img src="img/drop-img.jpg" alt="image" />
+										<ul class="drop-list">
+											<li><a href="#">Studio tours &amp; tv tapings</a></li>
+											<li><a href="#">shopping</a></li>
+											<li><a href="#">food &amp; drinks</a></li>
+											<li><a href="#">hotels</a></li>
+											<li><a href="#">arts &amp; culture</a></li>
+											<li><a href="#">parks &amp; recreation</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<div class="book">
+							<a href="#">BOOK YOUR TRIP</a>
+							<div class="book-drop">
+								<a href="#" class="book-act">BOOK YOUR TRIP</a>
+								<a href="#">Check in</a>
+								<a href="#">Check out</a>
+								<a href="#" class="book-search">Search</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="logo" href="#">Burbank</a>
+			</header>
+<!-- - - - - - - - - - - - - - end HEADER - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - start GALLERY - - - - - - - - - - - - - - -->
+			<div class="gallery">
+				<div class="wrap">
+					<ul class="list">
+						<li>
+							<a href="#">
+								<img src="img/gallery-img.jpg" alt="image" />
+							</a>
+							<div class="rolling-action">
+								<mark>Rolling… and action</mark>
+								<em>Check-in at the perfect place to check out movie and TV magic</em>
+								<span>WHAT TO DO: <a href="#">STUDIO TOURS</a></span>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/gallery-img.jpg" alt="image" />
+							</a>
+							<div class="rolling-action">
+								<mark>Rolling… and action</mark>
+								<em>Check-in at the perfect place to check out movie and TV magic</em>
+								<span>WHAT TO DO: <a href="#">STUDIO TOURS</a></span>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/gallery-img.jpg" alt="image" />
+							</a>
+							<div class="rolling-action">
+								<mark>Rolling… and action</mark>
+								<em>Check-in at the perfect place to check out movie and TV magic</em>
+								<span>WHAT TO DO: <a href="#">STUDIO TOURS</a></span>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/gallery-img.jpg" alt="image" />
+							</a>
+							<div class="rolling-action">
+								<mark>Rolling… and action</mark>
+								<em>Check-in at the perfect place to check out movie and TV magic</em>
+								<span>WHAT TO DO:<a href="#">STUDIO TOURS</a></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="arrows-switcher">
+					<a href="#" class="prev">&lt;</a>
+					<ul class="switcher">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
+					<a href="#" class="next">&gt;</a>
+				</div>
+			</div>
+<!-- - - - - - - - - - - - - - end GALLERY - - - - - - - - - - - - - - - - - -->
+			
+<!-- - - - - - - - - - - - - - start NEWS-HOLDER - - - - - - - - - - - - - - -->
+			<div class="news-holder">
+				<div class="news">
+					<div class="news-see">
+						<h1>See &amp; be seen</h1>
+						<div class="gallery2">
+							<div class="wrap2">
+								<ul class="list">
+									<li>
+										<a href="#"><img src="img/swiper-img.jpg" alt="image" /></a>
+										<div class="gallery2-box">
+											<h2>Russian Jazz Ballet Valery</h2>
+											<h3>Sit amet consectetuer adipiscing elit sed</h3>
+											<span>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</span>
+											<a class="learn-view" href="#">LEARN MORE</a>
+										</div>
+									</li>
+									<li>
+										<a href="#"><img src="img/swiper-img.jpg" alt="image" /></a>
+										<div class="gallery2-box">
+											<h2>Russian Jazz Ballet Valery</h2>
+											<h3>Sit amet consectetuer adipiscing elit sed</h3>
+											<span>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</span>
+											<a class="learn-view" href="#">LEARN MORE</a>
+										</div>
+									</li>
+									<li>
+										<a href="#"><img src="img/swiper-img.jpg" alt="image" /></a>
+										<div class="gallery2-box">
+											<h2>Russian Jazz Ballet Valery</h2>
+											<h3>Sit amet consectetuer adipiscing elit sed</h3>
+											<span>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</span>
+											<a class="learn-view" href="#">LEARN MORE</a>
+										</div>
+									</li>
+									<li>
+										<a href="#"><img src="img/swiper-img.jpg" alt="image" /></a>
+										<div class="gallery2-box">
+											<h2>Russian Jazz Ballet Valery</h2>
+											<h3>Sit amet consectetuer adipiscing elit sed</h3>
+											<span>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</span>
+											<a class="learn-view" href="#">LEARN MORE</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="arrows-switcher">
+								<a href="#" class="prev">&lt;</a>
+								<ul class="switcher">
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+								</ul>
+								<a href="#" class="next">&gt;</a>
+							</div>
+						</div>
+						<div class="news-see-box">
+							<a href="#"><img src="img/swiper-img.jpg" width="449" height="285" alt="image" /></a>
+							<div class="gallery2-box">
+								<h2>Russian Jazz Ballet Valery</h2>
+								<h3>Sit amet consectetuer adipiscing elit sed</h3>
+								<span>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</span>
+								<a class="learn-view" href="#">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+<!-- - - - - - - - - - - - - - start ACCORDION - - - - - - - - - - - - - - -->
+					<div class="attractions">
+						<h2>Popular Must See Attractions</h2>
+						<div class="accordion">
+							<input name="attracts" type="radio" id="check1" />
+							<label for="check1">Warner Bros. Studios VIP Tours</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+							<input checked type="radio" name="attracts" id="check2" />
+							<label for="check2">The Tonight Show with Jay Leno</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+							<input type="radio" name="attracts" id="check3" />
+							<label for="check3">Martial Arts History Museum</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+							<input type="radio" name="attracts" id="check4" />
+							<label for="check4">NBC Burbank Studio Tour</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+							<input type="radio" name="attracts" id="check5" />
+							<label for="check5">Starlight Bowl</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+							<input type="radio" name="attracts" id="check6" />
+							<label for="check6">It’s A Wrap</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+							<input type="radio" name="attracts" id="check7" />
+							<label for="check7">Hubba Hubba</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+							<input type="radio" name="attracts" id="check8" />
+							<label for="check8">Chaba Thai Spa</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+							<input type="radio" name="attracts" id="check9" />
+							<label for="check9">Racer’s Edge Indoor Karting</label>
+							<div class="slide">
+								<img src="img/slide-img.png" alt="image" />
+								<h3>See the “Tonight Show” with Jay Leno in person</h3>
+								<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+							</div>
+						</div>
+					</div>
+<!-- - - - - - - - - - - - - - end ACCORDION - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - start POPULAR-ATTRACTIONS - - - - - - - - - - - - - - -->
+					<div class="popular-attractions">
+						<h2>Popular Must See Attractions</h2>
+						<div class="gallery2-box">
+							<a href="#"><img src="img/slide-img-girl.png"  alt="image" /></a>
+							<h3>Russian Jazz Ballet Valery</h3>
+							<strong>Subhead/description can fill in here.</strong>
+							<span>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</span>
+							<a class="learn-view" href="#">LEARN MORE</a>
+						</div>
+						<div class="gallery2-box">
+							<a href="#"><img src="img/slide-img.png"  alt="image" /></a>
+							<h3>See the “Tonight Show” with Jay Leno in person</h3>
+							<strong>Subhead/description can fill in here.</strong>
+							<span>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</span>
+							<a class="learn-view" href="#">LEARN MORE</a>
+						</div>
+					</div>
+<!-- - - - - - - - - - - - - - end ATTRACTIONS-SLIDES - - - - - - - - - - - - - - -->
+
+				</div>
+			</div>
+<!-- - - - - - - - - - - - - - end NEWS-HOLDER - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - start GALLERY - - - - - - - - - - - - - - -->
+			<div class="gallery">
+				<div class="wrap">
+					<ul class="list">
+						<li>
+							<a href="#">
+								<img src="img/gallery-img2.jpg" alt="image" />
+							</a>
+							<div class="rolling-action">
+								<mark>LEAVE THE KIDS AT HOME</mark>
+								<em>Lorem ipsum delor set imet supium tuna cakes</em>
+								<span>trip ideas: <a href="#">Romantic weekends</a></span>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/gallery-img2.jpg" alt="image" />
+							</a>
+							<div class="rolling-action">
+								<mark>LEAVE THE KIDS AT HOME</mark>
+								<em>Lorem ipsum delor set imet supium tuna cakes</em>
+								<span>trip ideas: <a href="#">Romantic weekends</a></span>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/gallery-img2.jpg" alt="image" />
+							</a>
+							<div class="rolling-action">
+								<mark>LEAVE THE KIDS AT HOME</mark>
+								<em>Lorem ipsum delor set imet supium tuna cakes</em>
+								<span>trip ideas: <a href="#">Romantic weekends</a></span>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/gallery-img2.jpg" alt="image" />
+							</a>
+							<div class="rolling-action">
+								<mark>LEAVE THE KIDS AT HOME</mark>
+								<em>Lorem ipsum delor set imet supium tuna cakes</em>
+								<span>trip ideas: <a href="#">Romantic weekends</a></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="arrows-switcher">
+					<a href="#" class="prev">&lt;</a>
+					<ul class="switcher">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
+					<a href="#" class="next">&gt;</a>
+				</div>
+			</div>
+<!-- - - - - - - - - - - - - - end GALLERY - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - start TRIP-IDEAS - - - - - - - - - - - - - - -->
+			<div class="trip-ideas-holder">
+				<div class="trip-ideas">
+					<h4>Featured trip ideas</h4>
+					<div class="trips">
+						<div class="idea-box">
+							<img src="img/trip-idea-1.jpg" alt="image" />
+							<h5>Delenit augue duis dolore</h5>
+							<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica <a href="#">formas humanitatis</a> per seacula.</p>
+							<a class="learn-view" href="#">VIEW</a>
+						</div>
+						<div class="idea-box">
+							<img src="img/trip-idea-2.jpg" alt="image" />
+							<h5>Delenit augue duis dolore</h5>
+							<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica <a href="#">formas humanitatis</a> per seacula.</p>
+							<a class="learn-view" href="#">VIEW</a>
+						</div>
+						<div class="idea-box">
+							<img src="img/trip-idea-3.jpg" alt="image" />
+							<h5>Tincidunt laoreet dolore magna</h5>
+							<p>Quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem est.</p>
+							<a class="learn-view" href="#">VIEW</a>
+						</div>
+						<div class="idea-box">
+							<img src="img/trip-idea-4.jpg" alt="image" />
+							<h5>Tincidunt laoreet dolore magna</h5>
+							<p>Quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem est.</p>
+							<a class="learn-view" href="#">VIEW</a>
+						</div>
+					</div>
+					<a href="#">See all trip ideas</a>
+				</div>
+			</div>
+<!-- - - - - - - - - - - - - - end TRIP-IDEAS - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - start FOOTER - - - - - - - - - - - - - - -->
+			<footer>
+				<div class="footer-desktop">
+					<ul class="footer-sponsors-center">
+						<li>
+							<a href="#"><img src="img/sponsor-1.jpg" alt="image"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/sponsor-2.jpg" alt="image"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/sponsor-3.jpg" alt="image"></a>
+						</li>
+					</ul>
+					<ul class="footer-sponsors-left">
+						<li>
+							<a href="#"><img src="img/sponsor-3.jpg"  height="59" width="53" alt="image"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/sponsor-1.jpg"  height="61" width="64" alt="image"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/sponsor-2.jpg"  height="70" width="155" alt="image"></a>
+						</li>
+					</ul>
+					<div class="footer-grey">
+						<ul class="footer-nav">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">What to do</a></li>
+							<li><a href="#">Where to stay</a></li>
+							<li><a href="#">Trip ideas</a></li>
+							<li><a href="#">Plan your trip</a></li>
+							<li><a href="#">Plan a meeting</a></li>
+							<li><a href="#">Privacy policy</a></li>
+						</ul>
+						<span>&copy; 2013 Visit Burbank / Burbank Hospitality Association. All Rights Reserved.</span>
+					</div>
+				</div>
+
+				<div class="footer-mobile">
+					<div class="footer-connect">
+						<strong>LETS CONNECT</strong>
+						<ul class="sprites">
+							<li><a class="facebook" href="#"></a></li>
+							<li><a class="twitter" href="#"></a></li>
+							<li><a class="instagram" href="#"></a></li>
+							<li><a class="teaser" href="#"></a></li>
+							<li><a class="youtube" href="#"></a></li>
+						</ul>
+					</div>
+					<div class="footer-connect-touch">
+						<a href="#">Stay in Touch</a>
+						<a href="#">Book Now</a>
+					</div>
+					<div class="footer-navigation">
+						<ul class="footer-nav-grey">
+							<li><a href="#">What to do</a></li>
+							<li><a href="#">Where to stay</a></li>
+							<li><a href="#">Trip ideas</a></li>
+							<li><a href="#">Plan your trip</a></li>
+							<li><a href="#">Plan a meeting</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+						<div class="footer-navigation-about">
+							<a href="#">About us</a>
+							<a href="#">Press</a>
+							<a href="#">Privacy policy</a>
+						</div>
+					</div>
+					<ul class="footer-sponsors-mobile">
+						<li>
+							<a href="#"><img src="img/sponsor-3.jpg"  height="73" width="63" alt="image"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/sponsor-1.jpg"  height="81" width="84" alt="image"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/sponsor-2.jpg"  height="95" width="205" alt="image"></a>
+						</li>
+					</ul>
+					<span class="copy-mobile">&copy; 2013 Burbank Marketing Corporation. All Rights Reserved.</span>
+				</div>
+			</footer>
+<!-- - - - - - - - - - - - - - end FOOTER - - - - - - - - - - - - - - -->
+		</div>
+
+		<div class="fixed-holder">
+			<div class="fixed-box">
+				<strong>LETS CONNECT</strong>
+				<ul class="sprites">
+					<li><a class="facebook" href="#"></a></li>
+					<li><a class="instagram" href="#"></a></li>
+					<li><a class="youtube" href="#"></a></li>
+					<li><a class="pinterest" href="#"></a></li>
+					<li><a class="google" href="#"></a></li>
+					<li><a class="teaser" href="#"></a></li>
+				</ul>
+				<div class="book">
+					<a href="#">BOOK YOUR TRIP</a>
+					<div class="book-drop">
+						<a href="#" class="book-act">BOOK YOUR TRIP</a>
+						<a href="#">Check in</a>
+						<a href="#">Check out</a>
+						<a href="#" class="book-search">Search</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

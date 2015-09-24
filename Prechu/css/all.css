@@ -1,0 +1,620 @@
+
+/* START fonts *********************************************************************/
+@font-face {
+	font-family: 'SourceSansPro-Regular';
+	src: url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff') format('woff'), 
+		url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf')  format('truetype'), 
+		url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeWPLight';
+	src: url('../fonts/segoewp-light/segoewp-light-webfont.eot');
+	src: url('../fonts/segoewp-light/segoewp-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/segoewp-light/segoewp-light-webfont.svg#segoe_wplight') format('svg'),
+		url('../fonts/segoewp-light/segoewp-light-webfont.woff') format('woff'),
+		url('../fonts/segoewp-light/segoewp-light-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeWPN';
+	src: url('../fonts/segoewpn/segoewpn-webfont.eot');
+	src: url('../fonts/segoewpn/segoewpn-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/segoewpn/segoewpn-webfont.svg#segoe_wp_nregular') format('svg'),
+		url('../fonts/segoewpn/segoewpn-webfont.woff') format('woff'),
+		url('../fonts/segoewpn/segoewpn-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeWPNLight';
+	src: url('../fonts/segoewpn-light/segoewpn-light-webfont.eot');
+	src: url('../fonts/segoewpn-light/segoewpn-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/segoewpn-light/segoewpn-light-webfont.svg#segoe_wp_n_lightregular') format('svg'),
+		url('../fonts/segoewpn-light/segoewpn-light-webfont.woff') format('woff'),
+		url('../fonts/segoewpn-light/segoewpn-light-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/* General reset **********************************************************/
+* {
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+ul, form, fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+img {
+	display: block;
+	border-style: none;
+}
+input, select, textarea {
+	vertical-align: middle;
+	font: 100% arial, helvetica, sans-serif;
+	display: block;
+	outline: none; /*CHROME*/
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+input:focus::-ms-input-placeholder {
+  font-size: 0;
+}
+input:focus::-moz-placeholder {
+  font-size: 0;
+}
+input:focus::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: #f00;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+mark {
+	background: none;
+}
+
+input:invalid {
+	box-shadow: none;
+}
+
+#main {
+	max-width: 1070px;
+	margin: 0 auto 29px;
+	display: block; /*Safari, IE*/
+}
+/* General settings **************************************************************************/
+body {
+	min-width: 320px;
+	margin: 0;
+	color: #909090;
+	background: #fff;
+	font: 15px/17px 'SegoeWPNLight';
+}
+
+header {
+	max-width: 1070px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 24px 2.9% 0 3.57%;
+}
+
+h1 {
+	float: left;
+}
+
+.logo {
+	display: block;
+	color: #000;
+	font: 42px/44px 'SegoeWPLight';
+	background: url("../img/logo-bg.png") no-repeat;
+	padding: 0 0 0 31.5%; 
+    background-size: 25% 100%;
+}
+
+nav {
+	overflow: hidden;
+	margin: 24px 0 0 5%;
+	float: right;
+	min-width: 406px;
+	width: 41.5%;
+}
+
+nav a {
+	display: inline-block;
+	color: #6c6c6c;
+	font: 20px/22px 'SegoeWPN';
+	padding: 0 1% 19px;
+	margin: 0 0 0 7%;
+	background: linear-gradient(to right, #5094f2, #5094f2) 50% 100% no-repeat;
+	background-size: 0 3px;
+	transition: background 0.5s;
+	-o-transition: background 0.5s;
+	-moz-transition: background 05s;
+	-ms-transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+}
+
+nav a:first-child {
+	margin: 0;
+}
+
+nav a:hover,
+nav a.active {
+	background-size: 100% 3px;
+}
+
+#sidr-main {
+	display: none;
+}
+
+.list {
+	display: none;
+}
+/*  SWIPER ********************************************************************************************/
+.swiper-holder {
+	width: 100%;
+	background-image: url("../img/swiper-bg-bottom.png"), url("../img/swiper-bg.png");
+	background-repeat: repeat-x, no-repeat;
+	background-size: 23px 8px, 100% 100%;
+	background-position: 0 100%, 0 0;
+	margin-bottom: 64px;
+}
+
+.swiper-container {
+	max-width: 1070px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	/* Fix of Webkit flickering */
+	z-index: 1;
+}
+
+.swiper-wrapper {
+	position: relative;
+	width: 99999999px;
+	z-index: 1;
+	overflow: hidden;
+}
+.swiper-slide {
+	float: left;
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	padding: 38px 0 9px;
+}
+.swiper-slide img {
+	float: left;
+	width: 32.25%;
+	height: auto;
+	margin: 0 0 0 8%;
+}
+
+.swiper-txt {
+	float: right;
+	width: 48.69%;
+    padding: 111px 0 30px 0;
+    margin: 0 1.4% 0 0;
+}
+
+.swiper-txt > * {
+	font-family: 'SegoeWPLight';
+	color: #fff;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.swiper-txt strong {
+	font-size: 42px;
+	line-height: 44px;
+	font-weight: normal;
+}
+
+.swiper-txt span {
+	font-size: 26px;
+	line-height: 28px;
+}
+
+.sign {
+	width: 172px;
+	height: 41px;
+	padding: 8px 2% 0 8%;
+	font-size: 22px;
+	line-height: 24px;
+	border-radius: 2px;
+	text-align: center;
+	background: #5094f2 url("../img/sign-bg.png") 10px 9px no-repeat;
+	background-size: 13.5%;
+	margin: 34px 0 0 2.5%;
+	transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	-webkit-transition: box-shadow 0.5s; 
+}
+
+.sign:hover {
+	box-shadow: 0 0 30px 8px rgba(80, 148, 242, 0.7);
+}
+
+/* Arrows */
+	.swiper-button-prev,
+	.swiper-button-next {
+	position: absolute;
+	top: 48%;
+	width: 25px;
+	height: 63px;
+	z-index: 10;
+	background: url(../img/swiper-arrow.png) no-repeat;
+	left: 0;
+}
+.swiper-button-next{
+	right: 0;
+	left: auto;
+	transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+}
+
+/*  CONTRARY ********************************************************************************************/
+.contrary {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 87px;
+}
+
+.contrary .box {
+	float: left;
+	width: 33.33%;
+	font-family: 'SegoeWPN';
+	text-align: center;
+}
+
+.contrary .box a {
+	display: block;
+	width: 52.2%;
+	margin: 0 auto 25px;
+}
+
+.contrary .box a img {
+	width: 100%;
+	transition: transform 0.8s;
+	-o-transition: -o-transform 0.8s;
+	-ms-transition: -ms-transform 0.8s;
+	-moz-transition:-moz-transform 0.8s;
+	-webkit-transition: -webkit-transform 0.8s; 
+}
+
+.contrary .box a:hover img {
+	transform: rotate(360deg) scale(0.8); 
+	-o-transform: rotate(360deg) scale(0.8);	
+	-ms-transform: rotate(360deg) scale(0.8);
+	-moz-transform: rotate(360deg) scale(0.8);	
+	-webkit-transform: rotate(360deg) scale(0.8);
+}
+
+.box-txt {
+	padding: 0 14%;
+}
+
+.box-txt h2 {
+	font-size: 20px;
+	line-height: 22px;
+	color: #5094f2;
+	margin-bottom: 8px;
+}
+
+.box-txt span {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+/*  SHOPPING-CART ********************************************************************************************/
+.shopping-cart {
+	overflow: hidden;
+	width: 100%;
+}
+
+.cart {
+	float: left;
+	width: 48.6%;
+	text-align: center;
+}
+
+.cart img {
+	width: 73.9%;
+	margin: 0 auto;
+}
+
+.cart h3 {
+	font: 42px/44px 'SegoeWPN';
+	color: #6f7173;
+	margin: 0 5% 35px 0;
+}
+
+.bullet {
+	padding: 57px 5% 33px 0;
+	float: left;
+	width: 50%;
+}
+
+.bullet h4 {
+	font: 26px/28px 'SegoeWPN';
+	color: #6f7173;
+	margin-bottom: 28px;
+}
+
+.bullet  p {
+	margin: 0 0 19px;
+}
+/*  FOOTER ********************************************************************************************/
+footer {
+	width: 100%;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 32px 0 44px;
+	text-align: center;
+}
+
+/* start 640px ********************************************************************************************/
+@media screen and (max-width: 640px) {
+
+body {
+	font: 17px/19px 'SegoeWPNLight';
+}
+
+header {
+	padding: 23px 2.8% 15px 3.57%;
+}
+
+.logo {
+	font: 49px/51px 'SegoeWPLight';
+	padding: 0 0 0 31.5%; 
+    background-size: 25% 100%;
+}
+
+nav {
+	display: none;
+}
+
+.list {
+	display: block;
+	float: right;
+	width: 58px;
+	height: 43px;
+	background: #5094f2;
+	position: relative;
+	border: 1px solid rgba(80, 148, 242, 0.8);
+	border-left: 1px solid rgba(80, 148, 242, 0.5);
+	border-bottom: 1px solid rgba(80, 148, 242, 0.5);
+	border-radius: 3px;
+	margin-top: 4px;
+}
+
+.list span {
+	position: absolute;
+	position: relative;
+	top: 18px;
+	left: 10px;
+	display: block;
+	width: 36px;
+	height: 5px;
+	background: #fff;
+}
+
+.list span:before,
+.list span:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: #fff;
+	width: 36px;
+	height: 5px;
+	transition: background 0.5s, top 0.5s;
+	-o-transition: background 0.5s, top 0.5s;
+	-ms-transition: background 0.5s, top 0.5s;
+	-moz-transition: background 0.5s, top 0.5s;
+	-webkit-transition: background 0.5s, top 0.5s;
+}
+
+.list span:before {
+	top: 9px;
+}
+
+.list span:after {
+	top: -9px;
+}
+
+.sidr-open .list span:before,
+.sidr-open .list span:after {
+	background: none;
+	top: 0;
+}
+
+#sidr-main {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: -113px;
+	background: #5094f2;
+	padding: 0px 15px;
+}
+
+.sidr-inner a {
+	display: block;
+	margin: 34px 0;
+	color: #fff;
+	font: 29px/31px 'SegoeWPLight';
+	transition: text-shadow 0.3s;
+	-o-transition: text-shadow 0.3s;
+	-ms-transition: text-shadow 0.3s;
+	-moz-transition:text-shadow 0.3s;
+	-webkit-transition: text-shadow 0.3s; 
+}
+
+.sidr-inner a:hover {
+	text-shadow: 1px -1px 5px #fff, -1px 1px 5px #fff, -1px -1px 5px #fff, 1px 1px 5px #fff;
+}
+
+/*  SWIPER 640px ********************************************************************************************/
+.swiper-holder {
+	background-size: 0 0, 100% 100%;
+	margin-bottom: 39px;
+}
+
+.swiper-slide {
+	padding: 22px 0 1px;
+}
+.swiper-slide img {
+	width: 28.33%;
+	margin: 0 0 0 4.5%;
+}
+
+.swiper-txt {
+	width: 52%;
+    padding: 3px 0 30px 0;
+    margin: 0 3% 0 0;
+}
+
+.swiper-txt strong {
+	font-size: 30px;
+	line-height: 32px;
+	margin-bottom: 12px;
+}
+
+.swiper-txt span {
+	font-size: 22px;
+	line-height: 24px;
+	margin-bottom: 12px;
+}
+
+.sign {
+	width: 235px;
+	height: 53px;
+	padding: 8px 4% 0 19%;
+	font-size: 31px;
+	line-height: 33px;
+	background: #5094f2 url("../img/sign-bg.png") 14px 10px no-repeat;
+	margin: 34px 0 0 0;
+	transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	-webkit-transition: box-shadow 0.5s;
+	background-size: 14%; 
+}
+
+.sign:hover {
+	box-shadow: 0 0 30px 8px rgba(80, 148, 242, 0.7);
+}
+
+/* Arrows */
+	.swiper-button-prev,
+	.swiper-button-next {
+	display: none;
+}
+/*  640рх CONTRARY ********************************************************************************************/
+.contrary {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 11px;
+}
+
+.contrary .box {
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	margin-bottom: 32px;
+	padding: 0 0 20px 7%;
+}
+
+.contrary .box a {
+	float: left;
+	margin: 0;
+	width: 33%;
+}
+
+.contrary .box a img {
+	width: 73.2%;
+}
+
+.box-txt {
+	padding: 24px 6% 0 0;
+}
+
+.box-txt h2 {
+	font-size: 34px;
+	line-height: 36px;
+	margin-bottom: 8px;
+}
+
+.box-txt span {
+	font-size: 19px;
+	line-height: 23px;
+}
+/*  640px SHOPPING-CART ********************************************************************************************/
+.cart {
+	width: 100%;
+	float: none;
+}
+
+.cart img {
+	width: 36%;
+	margin: 0 auto;
+}
+
+.cart h3 {
+	font: 42px/44px 'SegoeWPN';
+	color: #6f7173;
+	margin: 0 2% 35px 0;
+}
+
+.bullet {
+    padding: 19px 3% 0 10.5%;
+	width: 100%;
+}
+
+.bullet h4 {
+	font: 34px/36px 'SegoeWPN';
+	margin-bottom: 28px;
+}
+
+.bullet  p {
+	margin: 0 0 17px 0.5%;
+}
+
+/* 640px FOOTER ********************************************************************************************/
+footer {
+	padding: 32px 0 33px;
+}
+
+}/* end 640px *********************************************/
