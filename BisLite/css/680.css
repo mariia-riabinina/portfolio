@@ -110,7 +110,7 @@ h2, h3 {
 
 .nav {
 	position: fixed;
-	left: -230px;
+	left: -250px;
 	top: 42px;
 }
 
@@ -138,15 +138,15 @@ h2, h3 {
 }
 
 .nav li a {
-	font-size: 16px;
-	line-height: 18px;
+	font-size: 17px;
+	line-height: 19px;
 }
 
 header .nav > li > a {
 	padding: 10px 14px;
 }
 .nav > li {
-	border-radius: 10px;
+	border-radius: 0 10px 10px 0;
 }
 
 .nav .nav-li-drop > a {
@@ -186,7 +186,7 @@ header .nav > li > a {
 
 .drop a,
 .drop li:last-child a {
-	padding: 6px 6px 6px 10px;
+	padding: 6px 10px;
 	border-bottom: 1px solid #e7e7e7;
 }
 
