@@ -145,8 +145,11 @@ h2, h3 {
 header .nav > li > a {
 	padding: 10px 14px;
 }
-.nav > li {
-	border-radius: 0 10px 10px 0;
+.nav > li:first-child {
+	border-radius: 0 7px 0 0;
+}
+.nav > li:last-child {
+	border-radius: 0 0 7px 0;
 }
 
 .nav .nav-li-drop > a {
@@ -164,7 +167,7 @@ header .nav > li > a {
 }
 
 .nav > li:hover {
-	box-shadow: 0 -5px #2aacc8, 0 5px #2aacc8,;
+	box-shadow: none;
 }
 
 .nav .nav-li-drop > .active,
@@ -504,7 +507,7 @@ header .nav > li > a {
     width: 40%;
 }
 .contacts-map iframe {
-    margin: 10px 0 0;
+	margin: 10px 0 0;
 }
 
 .submit-holder:before {
