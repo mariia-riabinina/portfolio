@@ -1,0 +1,13 @@
+.screen-header-holder {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-screen-header.jpg', sizingMethod='scale');
+	-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-screen-header.jpg', sizingMethod='scale')";
+}
+.screen-catalogue-holder {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-screen-catalogue.jpg', sizingMethod='scale');
+	-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-screen-catalogue.jpg', sizingMethod='scale')";
+}
+
+.connected-carousels .prev-navigation.inactive,
+.connected-carousels .next-navigation.inactive {
+    filter: alpha(opacity=50);
+}
